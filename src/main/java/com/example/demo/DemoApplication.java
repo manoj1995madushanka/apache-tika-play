@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.util.FileTypeDetector;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication

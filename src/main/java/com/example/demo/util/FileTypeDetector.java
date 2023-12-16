@@ -1,12 +1,16 @@
-package com.example.demo;
+package com.example.demo.util;
 
 import org.apache.tika.detect.DefaultDetector;
 import org.apache.tika.detect.Detector;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.mime.MediaType;
 
-public class FileTypeDetector {
+public final class FileTypeDetector {
     public static final Detector detector = new DefaultDetector();
+
+    private FileTypeDetector(){
+
+    }
 
     public static String getFileType(String filePath){
         try {
